@@ -1,0 +1,11 @@
+問１　ルートブリッジはswitch3
+問２　switch1-switch3 RP ルートブリッジに最も近い為
+　　　switch2-switch1 RP ルートブリッジに最も近い為
+      switch4-switch3 RP ルートブリッジに最も近い為
+
+　　　switch3-switch1 DP ルートブリッジの全てのポートは必ず指定ポートになる為
+　　　switch3-switch4 DP ルートブリッジの全てのポートは必ず指定ポートになる為
+　　　switch1-swttch2 DP RPの向かいのポートは必ず指定ポートになる為
+　　　switch4-switch2 DP switch4とswitch2の間のポートには何の役割も割り振られていなかったので送信元スイッチのブリッジIDが小さいほうを指定ポートとして扱った為
+
+　　　switch2-switch4 BP RP,DPのどちらにも選出されなかった為
